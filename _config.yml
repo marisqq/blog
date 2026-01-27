@@ -27,17 +27,5 @@ exclude:
   - Gemfile.lock
   - .gitignore
 
-# Default front matter
-defaults:
-  - scope:
-      path: "ceh-practical"
-      type: "pages"
-    values:
-      layout: default
-      parent: CEH v13 Practical Notes
-  - scope:
-      path: "ceh-theory"
-      type: "pages"
-    values:
-      layout: default
-      parent: CEH v13 Theory Notes
+# Breadcrumbs (shows parent > child path at top of page)
+breadcrumbs: true
