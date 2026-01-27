@@ -1,0 +1,58 @@
+title: qqcyber
+description: Cybersecurity notes, writeups, and blog
+url: "https://qqcyber.com"
+baseurl: ""
+
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+
+# Site navigation
+nav_external_links: []
+
+# Footer
+gh_edit_link: false
+
+# Search
+search_enabled: true
+search.heading_level: 3
+
+# Colors — dark theme
+color_scheme: dark
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Exclude from build
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+
+# Collections for blog posts
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: "blog"
+      type: "pages"
+    values:
+      layout: default
+      parent: Blog
+  - scope:
+      path: "ceh-notes"
+      type: "pages"
+    values:
+      layout: default
+      parent: CEH Notes
+  - scope:
+      path: "writeups"
+      type: "pages"
+    values:
+      layout: default
+      parent: Writeups
