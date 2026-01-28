@@ -1,6 +1,5 @@
 ---
 title: Navigation
----
 layout: default
 nav_order: 1
 ---
@@ -10,7 +9,7 @@ nav_order: 1
 
 ## [CEH v13 Practical Notes](ceh-practical/)
 
-Hands-on lab notes with screenshots, auto-synced from Obsidian.
+Preparation notes for CEH practical.
 
 
 ---
