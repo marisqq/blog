@@ -1,5 +1,5 @@
 ---
-title: qq Blog
+title: Navigation
 layout: default
 nav_order: 1
 ---
