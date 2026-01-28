@@ -3,7 +3,7 @@ title: "Recon-ng"
 layout: default
 parent: "02 - Footpirnting and reconnaissance"
 grand_parent: CEH v13 Practical Notes
-nav_order: 1
+nav_order: 3
 ---
 
 help  
