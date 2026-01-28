@@ -5,7 +5,6 @@ nav_order: 1
 ---
 
 
----
 
 ## [CEH v13 Practical Notes](ceh-practical/)
 
