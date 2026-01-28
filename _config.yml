@@ -13,7 +13,7 @@ search_enabled: true
 search.heading_level: 3
 
 # Colors — custom Parrot OS hacker theme
-color_scheme: parrot
+color_scheme: dark
 
 # Kramdown — enable GFM tables
 kramdown:
