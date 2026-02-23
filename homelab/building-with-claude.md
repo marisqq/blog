@@ -1,8 +1,7 @@
 ---
 title: Building with Claude Code
 layout: default
-parent: Homelab
-nav_order: 2
+nav_order: 5
 ---
 
 # Building with Claude Code

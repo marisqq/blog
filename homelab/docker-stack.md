@@ -1,8 +1,7 @@
 ---
-title: Docker Stack
+title: Homelab - Docker Stack
 layout: default
-parent: Homelab
-nav_order: 1
+nav_order: 4
 ---
 
 # Docker Stack
