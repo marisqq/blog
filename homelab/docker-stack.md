@@ -13,16 +13,16 @@ So for learning purposes i decided to set up docker stack on my local server...T
 
 ## Services i use at the moment
 
-| Container | Port | Notes |
-|-----------|------|-------|
-| Nextcloud | 8080 | File sync, calendar, contacts |
-| Plex | 32400 | Media server, main library |
-| Jellyfin | — | Backup media server |
-| open-webui | 3000 | Local LLM frontend (Ollama) |
-| Portainer | 9443 | Docker management UI |
-| cloudflared | — | Cloudflare tunnel for external access |
-| netdata | — | Server monitoring |
-| mcbot | — | minecraft server bot |
+| Container | Use Case |
+|-----------|----------|
+| Nextcloud | File sync, calendar, contacts |
+| Plex | Media server, main library |
+| Jellyfin | Backup media server |
+| open-webui | Local LLM frontend (Ollama) |
+| Portainer | Docker management UI |
+| cloudflared | Cloudflare tunnel for external access |
+| netdata | Server monitoring |
+| mcbot | Minecraft server bot |
 
 
 ## External Access
