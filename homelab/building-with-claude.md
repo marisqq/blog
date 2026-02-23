@@ -1,7 +1,7 @@
 ---
 title: Building with Claude Code
 layout: default
-nav_order: 5
+nav_order: 6
 ---
 
 # Building with Claude Code

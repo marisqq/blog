@@ -1,7 +1,7 @@
 ---
 title: Homelab - GPU Passthrough (KVM)
 layout: default
-nav_order: 6
+nav_order: 5
 ---
 
 # GPU Passthrough (KVM)
