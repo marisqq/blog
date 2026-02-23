@@ -17,3 +17,9 @@ Preparation notes for CEH practical.
 
 Modules 1-20, full CEH 312-50 exam coverage, modules 1-10 hand written, 11-20 AI generated for ChatGpt quiz applet.
 
+
+---
+
+## [Homelab](homelab/)
+
+Notes on my home server — Docker stack, GPU passthrough, and projects built with Claude Code.
