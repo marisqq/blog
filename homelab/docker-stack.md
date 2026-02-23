@@ -5,13 +5,13 @@ nav_order: 4
 ---
 
 # Docker Stack
-
-Running Docker on an Ubuntu server (192.168.1.10). Most services are just `docker compose up -d` with a simple compose file and an `.env` for secrets.
+So for learning purposes i decided to set up docker stack on my local server...Then i got addicetd.
+ Most services are just `docker compose up -d` with a simple compose file and an `.env` for secrets.
 
 <!-- screenshot: portainer dashboard or docker ps output -->
 *![](img/docker-portainer.png)*
 
-## Services
+## Services i use at the moment
 
 | Container | Port | Notes |
 |-----------|------|-------|
@@ -22,20 +22,18 @@ Running Docker on an Ubuntu server (192.168.1.10). Most services are just `docke
 | Portainer | 9443 | Docker management UI |
 | cloudflared | — | Cloudflare tunnel for external access |
 | netdata | — | Server monitoring |
+| mcbot | — | minecraft server bot |
+
 
 ## External Access
 
-Nextcloud is exposed externally via a Cloudflare tunnel — no port forwarding needed. The `cloudflared` container connects out to Cloudflare and tunnels traffic to `localhost:8080`. Domain is `makonis.qqcyber.com`.
+Nextcloud is exposed externally via a Cloudflare tunnel — no port forwarding needed. The `cloudflared` container connects out to Cloudflare and tunnels traffic to `localhost:` and its free. And if i want to add another service i just create subdomain and boom-done.
 
 Everything else stays LAN-only.
 
 ## Notes
 
-- Portainer is useful but I mostly just use `docker compose` directly
+- Portainer is useful but I mostly just use `docker compose` directly, also it broke and i haven't gotten to fixing it. who need GUI anyway.
 - Ollama runs on the host (not in Docker) because GPU passthrough inside containers is more trouble than it's worth on this setup
 - Plex transcodes fine with software — haven't needed to set up hardware transcoding yet
 
-```bash
-# quick status check
-docker ps --format "table {% raw %}{{.Names}}\t{{.Status}}\t{{.Ports}}{% endraw %}"
-```

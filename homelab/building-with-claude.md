@@ -6,7 +6,7 @@ nav_order: 5
 
 # Building with Claude Code
 
-Been using Claude Code (Anthropic's CLI tool) to build a couple of projects. The workflow is basically: describe what you want, review what it writes, iterate. It's pretty good at keeping context across a whole project and not just spitting out isolated snippets.
+For everything vibe code related Claude is awesome to build a couple of projects. The workflow is basically: describe what you want, review what it writes, iterate. It's pretty good at keeping context across a whole project and not just spitting out isolated snippets. Just need to ask to save info in memory from time to time, its not like GPT that will just start hang in long "chats", it automatically restets and givers itself context.
 
 ## Minecraft Server Admin Panel
 
@@ -19,7 +19,7 @@ Runs in a Docker container with the systemd socket mounted so it can actually st
 Stack: Node.js, Express, Socket.IO, HTML/CSS/JS (no framework)
 
 <!-- screenshot: mc admin panel web UI -->
-*![](img/mc-admin-panel.png)*
+![](img/panel.png)
 
 *Still adding features.*
 

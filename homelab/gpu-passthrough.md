@@ -5,19 +5,20 @@ nav_order: 6
 ---
 
 # GPU Passthrough (KVM)
-
-Passing an NVIDIA RTX 3080 through to a Windows 10 VM for gaming. The host runs Ubuntu with QEMU/KVM and libvirt.
+So i wanted to game, but i really don't like microslop windows and avoid using it, but at the moment VR gaming is not yet there. Also the point is using my gaming PC as server, and my thinkpad may run balatro and not much more. So i figured:
+passing an NVIDIA RTX 3080 through to a Windows 10 VM for gaming is the best choice. The host runs Ubuntu with QEMU/KVM and libvirt.
 
 ## Hardware
 
 - **CPU:** AMD (IOMMU support required — enable in BIOS as AMD-Vi)
 - **GPU:** RTX 3080 LHR (passed to VM)
-- **Host GPU:** AMD Raphael iGPU (used by host, keeps display working)
+- **Host GPU:** Intel something-iris
 
 <!-- screenshot: Windows VM running a game / Sunshine stream -->
 *![](img/gpu-passthrough-vm.png)*
 
 ## IOMMU Setup
+(This is mostly done with claude and some googling)
 
 Enable IOMMU in BIOS, then add to kernel parameters:
 
@@ -38,8 +39,8 @@ done | sort -V
 The VM is managed via `virsh`. Key parts of the XML config:
 
 - GPU (01:00.0) and its HDMI audio (01:00.1) passed via `<hostdev>` with `<driver name='vfio'/>`
-- ASUS USB Bluetooth (0b05:190e) passed for wireless peripherals
-- ASMedia USB controller (0d:00.0) passed for PS VR2 adapter
+- ASUS USB Bluetooth passed for wireless peripherals
+- USB passtrough for PS VR2 adapter
 - Virtual VGA set to `primary="no"` so the RTX is the primary display
 
 ```bash
@@ -49,15 +50,11 @@ echo "10de 2206" > /sys/bus/pci/drivers/vfio-pci/new_id
 
 ## Remote Access
 
-Using **Sunshine** (on the Windows VM) + **Moonlight** (on client devices) for game streaming over LAN. Low latency, works well.
+Using **Sunshine** (on the Windows VM) + **Moonlight** (on client devices) for game streaming over LAN. Low latency, works well - most of the times when connected via ethernet, on wifi not so much, but i haven't looked in why so, idea is it should run at least 1080p with ok bitrate.
 
-The RTX 3080 needs either a real monitor, a dummy HDMI plug, or the PS VR2 connected via DisplayPort — otherwise Sunshine can't capture the display.
+The RTX 3080 dummy HDMI or DP plug, i use some old hdmi->vga adapter. 
 
-VNC via `192.168.1.10:5900` as emergency fallback if something goes wrong with the GPU.
-
-## PS VR2
-
-Connected via DisplayPort to the RTX 3080 inside the VM. The USB adapter (ASMedia controller, 0d:00.0) is also passed through. Using **DeoVR** (free on Steam) for local VR video playback.
+If somehting goes bad with gpu i can use cockpit or cli and jsut reboot.
 
 ## Notes
 
