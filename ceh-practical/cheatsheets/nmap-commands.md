@@ -7,7 +7,7 @@ nav_order: 1
 ---
 
 
-| can Type / Purpose                        | Command Example                                                                                      |
+| Scan Type / Purpose                       | Command Example                                                                                      |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | TARGET SELECTION                          |                                                                                                      |
 | Scan a single IP                          | nmap 192.168.1.1                                                                                     |

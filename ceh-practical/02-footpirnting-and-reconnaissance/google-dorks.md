@@ -9,7 +9,7 @@ nav_order: 2
 Google dorks  
 
 
-| ilter                                   | Description                                                                               | Example                                               |
+| Filter                                  | Description                                                                               | Example                                               |
 | :-------------------------------------- | :---------------------------------------------------------------------------------------- | :---------------------------------------------------- |
 | allintext                               | Searches for occurrences of all specified keywords.                                       | `allintext:"keyword"`                                 |
 | intext                                  | Searches for the occurrence of keywords at once or consecutively.                         | `intext:"keyword"`                                    |
