@@ -40,7 +40,7 @@ The VM is managed via `virsh`. Key parts of the XML config:
 
 - GPU (01:00.0) and its HDMI audio (01:00.1) passed via `<hostdev>` with `<driver name='vfio'/>`
 - ASUS USB Bluetooth passed for wireless peripherals
-- USB passtrough for PS VR2 adapter
+- USB passthrough for PS VR2 adapter
 - Virtual VGA set to `primary="no"` so the RTX is the primary display
 
 ```bash
@@ -54,7 +54,7 @@ Using **Sunshine** (on the Windows VM) + **Moonlight** (on client devices) for g
 
 The RTX 3080 dummy HDMI or DP plug, i use some old hdmi->vga adapter. 
 
-If somehting goes bad with gpu i can use cockpit or cli and jsut reboot.
+If something goes bad with gpu i can use cockpit or cli and just reboot.
 
 ## Notes
 

@@ -5,7 +5,7 @@ nav_order: 4
 ---
 
 # Docker Stack
-So for learning purposes i decided to set up docker stack on my local server...Then i got addicetd.
+So for learning purposes i decided to set up docker stack on my local server...Then i got addicted.
  Most services are just `docker compose up -d` with a simple compose file and an `.env` for secrets.
 
 <!-- screenshot: portainer dashboard or docker ps output -->
@@ -27,7 +27,7 @@ So for learning purposes i decided to set up docker stack on my local server...T
 
 ## External Access
 
-Nextcloud is exposed externally via a Cloudflare tunnel — no port forwarding needed. The `cloudflared` container connects out to Cloudflare and tunnels traffic to `localhost:` and its free. And if i want to add another service i just create subdomain and boom-done.
+Nextcloud is exposed externally via a Cloudflare tunnel — no port forwarding needed. The `cloudflared` container connects out to Cloudflare and tunnels traffic to `localhost:` and it's free. And if i want to add another service i just create subdomain and boom-done.
 
 Everything else stays LAN-only.
 
