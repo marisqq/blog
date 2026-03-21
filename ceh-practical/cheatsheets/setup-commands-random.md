@@ -3,7 +3,7 @@ title: "setup commands - random"
 layout: default
 parent: "Cheatsheets"
 grand_parent: CEH v13 Practical Notes
-nav_order: 3
+nav_order: 4
 ---
 
 ubuntu server change network interfaces to enable access to internet:  
