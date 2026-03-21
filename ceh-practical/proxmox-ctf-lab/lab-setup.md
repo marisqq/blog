@@ -3,7 +3,7 @@ title: "LAB SETUP"
 layout: default
 parent: "Proxmox CTF Lab"
 grand_parent: CEH v13 Practical Notes
-nav_order: 1
+nav_order: 3
 ---
 
 # CEH Practical CTF Lab — Proxmox Setup

@@ -3,7 +3,7 @@ title: "PRACTICE PLAN"
 layout: default
 parent: "Proxmox CTF Lab"
 grand_parent: CEH v13 Practical Notes
-nav_order: 2
+nav_order: 4
 ---
 
 # What Goes Where
