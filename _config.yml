@@ -1,7 +1,7 @@
 title: qq Notes
 description: Cybersecurity notes and homelab
-url: "https://qqcyber.com"
-baseurl: ""
+url: "https://marisqq.github.io"
+baseurl: "/blog"
 
 remote_theme: just-the-docs/just-the-docs@v0.10.1
 
